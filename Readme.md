@@ -6,9 +6,9 @@ CopyTo bounds checking issue demo (standard .NET collections, generics and speci
 
 Using dotnet cli (http://dotnet.github.io/getting-started/)
 
-$ dotnet restore
-$ dotnet build
-$ dotnet run
+- dotnet restore
+- dotnet build
+- dotnet run
 
 # License (MIT)
 
