@@ -15,6 +15,7 @@ namespace CollectionsCopyTo
         
         public static void TestCollections(bool useNextNonExistentIndex = false)
         {
+            FormatExceptionDetails("Array", () => CopyToExample.ArrayCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("ArrayList", () => CopyToExample.ArrayListCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("BitArray", () =>CopyToExample.BitArrayCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("ConcurrentBag", () =>CopyToExample.ConcurrentBagCopyTo(useNextNonExistentIndex));
@@ -23,6 +24,7 @@ namespace CollectionsCopyTo
             FormatExceptionDetails("HashSet", () =>CopyToExample.HashSetCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("Hashtable", () =>CopyToExample.HashtableCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("HybridDictionary", () =>CopyToExample.HybridDictionaryCopyTo(useNextNonExistentIndex));
+            FormatExceptionDetails("List", () =>CopyToExample.ListCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("LinkedList", () =>CopyToExample.LinkedListCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("ListDictionary", () =>CopyToExample.ListDictionaryCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("NameValueCollection", () =>CopyToExample.NameValueCollectionCopyTo(useNextNonExistentIndex));

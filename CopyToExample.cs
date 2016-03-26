@@ -7,6 +7,19 @@ namespace CollectionsCopyTo
 {
     public static class CopyToExample
     {
+        public static void ArrayCopyTo(bool greaterIndex = false)
+        {
+            var array = new string[0];
+            var buffer = new string[1];
+            if(greaterIndex)
+            {
+                array.CopyTo(buffer, 2);
+            }
+            else
+            {
+                array.CopyTo(buffer, 1);
+            }
+        }
         public static void ArrayListCopyTo(bool greaterIndex = false) {
             var arrayList = new ArrayList();
             var buffer = new object[1];
@@ -119,6 +132,20 @@ namespace CollectionsCopyTo
             else
             {
                 hybridDictionaryAsCollection.CopyTo(buffer, 1);
+            }
+        }
+        
+        public static void ListCopyTo(bool greaterIndex = false)
+        {
+            var list = new List<string>();
+            var buffer = new string[1];
+            if(greaterIndex)
+            {
+                list.CopyTo(buffer, 2);
+            }
+            else
+            {
+                list.CopyTo(buffer, 1);
             }
         }
         
