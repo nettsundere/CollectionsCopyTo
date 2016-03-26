@@ -9,7 +9,9 @@ namespace CollectionsCopyTo
             Console.WriteLine("Trying to copy to buffer having size of 1 starting with index=1");
             TestCollections(false);
             
-            Console.WriteLine();
+            Console.WriteLine("-");
+            Console.WriteLine("-");
+            Console.WriteLine("-");
             
             Console.WriteLine("Trying to copy to buffer having size of 1 starting with index=2");
             TestCollections(true);
