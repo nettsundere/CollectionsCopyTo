@@ -24,6 +24,8 @@ namespace CollectionsCopyTo
             FormatExceptionDetails("BitArray", () =>CopyToExample.BitArrayCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("ConcurrentBag", () =>CopyToExample.ConcurrentBagCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("ConcurrentDictionary", () =>CopyToExample.ConcurrentDictionaryCopyTo(useNextNonExistentIndex));
+            FormatExceptionDetails("ConcurrentQueue", () =>CopyToExample.ConcurrentQueueCopyTo(useNextNonExistentIndex));
+            FormatExceptionDetails("ConcurrentStack", () =>CopyToExample.ConcurrentStackCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("Dictionary", () =>CopyToExample.DictionaryCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("HashSet", () =>CopyToExample.HashSetCopyTo(useNextNonExistentIndex));
             FormatExceptionDetails("Hashtable", () =>CopyToExample.HashtableCopyTo(useNextNonExistentIndex));

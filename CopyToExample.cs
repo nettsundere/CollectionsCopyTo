@@ -76,6 +76,34 @@ namespace CollectionsCopyTo
             }
         }
         
+        public static void ConcurrentStackCopyTo(bool greaterIndex = false)
+        {
+            var stack = new ConcurrentStack<string>();
+            var buffer = new string[1];
+            if(greaterIndex)
+            {
+                stack.CopyTo(buffer, 2);
+            }
+            else
+            {
+                stack.CopyTo(buffer, 1);
+            }
+        }
+        
+        public static void ConcurrentQueueCopyTo(bool greaterIndex = false)
+        {
+            var queue = new ConcurrentQueue<string>();
+            var buffer = new string[1];
+            if(greaterIndex)
+            {
+                queue.CopyTo(buffer, 2);
+            }
+            else
+            {
+                queue.CopyTo(buffer, 1);
+            }
+        }
+        
         public static void DictionaryCopyTo(bool greaterIndex = false)
         {
             var dictionary = new Dictionary<string, string>();
