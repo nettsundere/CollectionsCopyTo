@@ -34,7 +34,7 @@ namespace CollectionsCopyTo
         }
         
         public static void BitArrayCopyTo(bool greaterIndex = false) {
-            var bitArray = new BitArray(20, false);
+            var bitArray = new BitArray(0, false);
             var bitArrayAsCollection = bitArray as ICollection;
             var buffer = new bool[1];
             if(greaterIndex)
